@@ -31,22 +31,21 @@
         "bin-dir": "bin/"
     },
     "require": {
-        "php": ">=7.1",
-
+        "php": ">=8.2",
+        "ext-json": "*",
+        "symfony/framework-bundle": "6.2.*",
+        "symfony/http-client": "v6.2.*",
+        "symfony/dotenv": "6.2.*",
+        "symfony/yaml": "6.2.*",
+        "ramsey/uuid": "^4.7.5",
+        "opis/json-schema": "^v2.3",
+        "couchbase/couchbase": "^4.1",
         "hoa/ruler": "~2.0",
-        "symfony/property-access": "~3.0|~4.0"
+        "symfony/property-access": "6.2.*"
     },
     "require-dev": {
-        "ext-json": "*",
-
         "mikey179/vfsstream": "~1.4",
-        "coduo/phpspec-data-provider-extension": "~1.0,!=1.0.2",
-        "phpspec/phpspec": "~2.0,>=2.4@dev",
-
         "behat/behat": "~3.0",
-
-        "kphoen/rusty": "dev-master",
-
         "liip/rmt": "^1.2"
     },
     "suggest": {

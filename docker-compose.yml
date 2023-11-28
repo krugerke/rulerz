@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  ms-d2c-php-common-rulerz:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    container_name: ms-d2c-php-common-rulerz
+    volumes:
+      - .:/var/www/html
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file: .env.test
+
+networks:
+  default:
+    name: d2c-loyalty-service-network
+    external: true
